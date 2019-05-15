@@ -1,5 +1,10 @@
 package generics
 
+/**
+  * 先頭と、それ以外から成るリスト<br>
+  *   Aのリストは、Aのスーパータイプのリストでもある。
+  * @tparam A 格納するデータの型
+  */
 abstract class SimpleList[+A] {
   def head: A
   def tail: SimpleList[A]
